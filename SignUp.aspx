@@ -12,7 +12,7 @@
         * {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            box-sizing: border-box; 
         }
 
         /* Body */
@@ -203,6 +203,22 @@
                     ErrorMessage="Please enter a valid 10-digit phone number" 
                     ForeColor="Red" Font-Size="Small" />
             </div>
+             <!-- Gender -->
+            <div class="input-group">
+                <label>Gender</label>
+                <asp:DropDownList ID="ddlGender" runat="server">
+                    <asp:ListItem Text="Select Gender" Value="" />
+                    <asp:ListItem Text="Male" Value="Male" />
+                    <asp:ListItem Text="Female" Value="Female" />
+                    <asp:ListItem Text="Other" Value="Other" />
+                </asp:DropDownList>
+            </div>
+            
+            <!-- Date of Birth -->
+            <div class="input-group">
+                <label>Date of Birth</label>
+                <asp:TextBox ID="txtDOB" runat="server" />
+            </div>
 
             <!-- Password -->
             <div class="input-group">
@@ -228,7 +244,8 @@
             </div>
 
             <!-- Register Button -->
-            <asp:Button ID="btnRegister" runat="server" Text="Register" CssClass="btn"/>
+            <asp:Button ID="btnRegister" runat="server" Text="Register" CssClass="btn" 
+                onclick="btnRegister_Click"/>
 
             <!-- Error Message -->
             <div class="error-message">
@@ -241,7 +258,8 @@
                     <h3>Verify Your Email</h3>
                     <p>An OTP has been sent to your email. Please enter it below:</p>
                     <asp:TextBox ID="txtOtp" runat="server" CssClass="input-box" Placeholder="Enter OTP"></asp:TextBox>
-                    <asp:Button ID="btnVerifyOtp" runat="server" Text="Verify OTP" CssClass="btn-submit" />
+                    <asp:Button ID="btnVerifyOtp" runat="server" Text="Verify OTP" 
+                        CssClass="btn-submit" onclick="btnVerifyOtp_Click" />
                     <asp:Label ID="lblOtpMessage" runat="server" CssClass="error-message"></asp:Label>
                 </div>
             </div>

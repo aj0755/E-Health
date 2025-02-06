@@ -132,9 +132,10 @@
         <form id="Form1" runat="server">
             <div class="input-group">
                 <label for="username">Email</label>
-                <asp:TextBox ID="txtUsername" runat="server" Placeholder="Enter your email" AutoComplete="off" />
+                <asp:TextBox ID="txtEmail" runat="server" Placeholder="Enter your email" 
+                    AutoComplete="off" />
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
-                    ControlToValidate="txtUsername" ErrorMessage="Please enter your email." 
+                    ControlToValidate="txtEmail" ErrorMessage="Please enter your email." 
                     ForeColor="Red" />
             </div>
 
@@ -146,7 +147,8 @@
                     ForeColor="Red" />
             </div>
 
-            <asp:Button ID="btnLogin" runat="server" Text="Login" CssClass="btn" />
+            <asp:Button ID="btnLogin" runat="server" Text="Login" CssClass="btn" 
+                onclick="btnLogin_Click" />
 
             <div class="error-message">
                 <asp:Label ID="lblErrorMessage" runat="server" ForeColor="Red" Visible="false" />

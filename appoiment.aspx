@@ -103,7 +103,6 @@
                     <option value="Dr. Lee">Dr. Lee</option>
                 </select>
                 <input type="date" name="date" required>
-                <input type="time" name="time" required>
                 <textarea name="reason" placeholder="Reason for Appointment" required></textarea>
                 <button type="submit">Book Appointment</button>
             </form>
@@ -118,7 +117,7 @@
 
         <!-- Right Container (Image) -->
         <div class="right-container">
-         <img src="Home_images/app.jpg" />
+         <img src="Images/app.jpg" />
         </div>
     </div>
 

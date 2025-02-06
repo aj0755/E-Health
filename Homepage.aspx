@@ -17,7 +17,7 @@
    <div class="about-section">
         <div class="about-container">
             <div class="about-image">
-                <img src="Home_images/aboutus.jpeg" alt="Medical Professionals" />
+                <img src="Images/aboutus.jpeg" alt="Medical Professionals" />
             </div>
             <div class="about-content">
                 <h2>About Us</h2>
@@ -89,7 +89,7 @@
 
         <!-- Doctor 1 -->
         <div class="doctor-card">
-            <img src="Home_images/team-1.jpg" alt="Dr. John Doe" class="doctor-img" />
+            <img src="Images/team-1.jpg" alt="Dr. John Doe" class="doctor-img" />
             <h2 class="doctor-name">Dr. John Doe</h2>
             <p class="specialty">Cardiologist</p>
             <p class="bio">15+ years of experience in advanced cardiovascular treatments.</p>
@@ -98,7 +98,7 @@
 
         <!-- Doctor 2 -->
         <div class="doctor-card">
-            <img src="Home_images/team-3.jpg" alt="Dr. Emily Smith" class="doctor-img" />
+            <img src="Images/team-3.jpg" alt="Dr. Emily Smith" class="doctor-img" />
             <h2 class="doctor-name">Dr. Emily Smith</h2>
             <p class="specialty">Dermatologist</p>
             <p class="bio">Expert in skincare and dermatology treatments.</p>
@@ -107,7 +107,7 @@
 
         <!-- Doctor 3 -->
         <div class="doctor-card">
-            <img src="Home_images/team-2.jpg" alt="Dr. James Davis" class="doctor-img">
+            <img src="Images/team-2.jpg" alt="Dr. James Davis" class="doctor-img">
             <h2 class="doctor-name">Dr. James Davis</h2>
             <p class="specialty">Neurologist</p>
             <p class="bio">Specialist in treating neurological disorders.</p>
@@ -116,7 +116,7 @@
 
         <!-- Doctor 4 -->
         <div class="doctor-card">
-            <img src="Home_images/testimonial-1.jpg" alt="Dr. Sophia Johnson" class="doctor-img">
+            <img src="Images/testimonial-1.jpg" alt="Dr. Sophia Johnson" class="doctor-img">
             <h2 class="doctor-name">Dr. Sophia Johnson</h2>
             <p class="specialty">Orthopedic Surgeon</p>
             <p class="bio">Expert in bone and joint recovery treatments.</p>
@@ -125,7 +125,7 @@
 
         <!-- Doctor 5 -->
         <div class="doctor-card">
-            <img src="Home_images/doctor5.jpg"alt="Dr. Robert Wilson" class="doctor-img">
+            <img src="Images/doctor5.jpg"alt="Dr. Robert Wilson" class="doctor-img">
             <h2 class="doctor-name">Dr. Robert Wilson</h2>
             <p class="specialty">Pediatrician</p>
             <p class="bio">Dedicated to children's health and wellness.</p>
@@ -134,7 +134,7 @@
 
         <!-- Doctor 6 -->
         <div class="doctor-card">
-            <img src="Home_images/doctor6.jpg" alt="Dr. Olivia White" class="doctor-img">
+            <img src="Images/doctor6.jpg" alt="Dr. Olivia White" class="doctor-img">
             <h2 class="doctor-name">Dr. Olivia White</h2>
             <p class="specialty">General Physician</p>
             <p class="bio">Providing high-quality primary healthcare services.</p>
@@ -143,6 +143,16 @@
 
     </div>
 </section>
+<script>
+        // Check if the query string contains login=success
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('login') === 'success') {
+        alertify.set('notifier', 'position', 'top-right');
+            alertify.success('You are successfully logged in!');
+            const newURL = window.location.href.split('?')[0];
+        window.history.replaceState({}, document.title, newURL);
+        }
+</script>
 
 </asp:Content>
 

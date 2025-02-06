@@ -138,7 +138,8 @@
                     ForeColor="Red" />
             </div>
 
-            <asp:Button ID="btnSubmit" runat="server" Text="Submit" CssClass="btn" />
+            <asp:Button ID="btnSubmit" runat="server" Text="Submit" CssClass="btn" 
+                onclick="btnSubmit_Click" />
 
             <div class="error-message">
                 <asp:Label ID="lblErrorMessage" runat="server" ForeColor="Red" Visible="false" />

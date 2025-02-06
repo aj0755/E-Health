@@ -10,12 +10,14 @@
     <asp:ContentPlaceHolder id="head" runat="server"></asp:ContentPlaceHolder>
     <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/>
 </head>
 <body>
     <form id="form1" runat="server">
         <header class="header">
             <div class="logo-section">
-                <img src="logo/logo.png" alt="E-Healthcare Logo" class="logo" />
+                <img src="Images/logo.jpeg" alt="E-Healthcare Logo" class="logo" />
                 <h1 class="site-name">E-Healthcare</h1>
             </div>
             <nav class="navbar">
@@ -28,7 +30,11 @@
                 </ul>
             </nav>
             <div class="login-container">
-                <a href="Login.aspx">Login</a>
+                <% if (Session["UserEmail"] != null) { %>
+                    <a href="UserInfo.aspx"><i class="fas fa-user"></i></a>
+                <% } else { %>
+                    <a href="Login.aspx">Login</a>
+                <% } %>
             </div>
         </header>
 
@@ -65,7 +71,6 @@
                 <a href="#"><i class="fab fa-linkedin"></i></a>
             </div>
         </footer>
-        <p class="footer-bottom">&copy; 2025 E-Healthcare. All rights reserved.</p>
     </form>
 </body>
 </html>
