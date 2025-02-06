@@ -1,0 +1,695 @@
+﻿/* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        
+        /* Header Styling */
+        .header {
+            background-color: #5BC0DE;
+            padding: 15px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 5%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-weight:bold;
+            font-size:1.5em;
+        }
+        .logo-section {
+            display: flex;
+            align-items: center;
+        }
+        .logo {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        .site-name {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+        }
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        .navbar ul li {
+            margin: 0 15px;
+        }
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 25px;
+            transition: color 0.3s;
+        }
+        .navbar ul li a:hover {
+            color: #FFC107;
+        }
+        .login-container a {
+            background-color: #fb8500;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        .login-container a:hover {
+            background-color: #FFA000;
+        }
+        
+        /* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #5BC0DE; /* Light Blue */
+    color: #fff;
+}
+
+.hero-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+}
+
+.btn-orange {
+    background-color: #f77f00; /* Orange */
+    width:20%;
+}
+
+.btn-orange:hover {
+    background-color: #FFA000; /* Darker Orange */
+}
+
+/* About Us Section */
+.about-section {
+    background: #0096c7;
+    padding: 80px;
+    display: flex;
+    justify-content: center: cent: cent-items: cent;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    width: 100%;
+    background: #ffffff;
+    padding: 70px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.about-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Section */
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 1500px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Content Section */
+.about-content {
+    flex: 1;
+    text-align: left;
+}
+
+.about-content h2 {
+    font-size: 34px;
+    color: #004d99;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.about-content h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Read More Button */
+.read-more-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #007BFF;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.read-more-btn:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .about-content {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        padding: 40px 5%;
+    }
+
+    .about-content h2 {
+        font-size: 28px;
+    }
+
+    .about-content h3 {
+        font-size: 22px;
+    }
+
+    .about-content p {
+        font-size: 16px;
+    }
+
+    .read-more-btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+
+/* Service Section */
+.services-section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .services-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .service-card {
+            flex: 1 1 calc(33.333% - 20px);
+            max-width: calc(33.333% - 20px);
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .service-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+            color: blue;
+        }
+        @media (max-width: 768px) {
+            .service-card {
+                flex: 1 1 calc(50% - 20px);
+                max-width: calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .service-card {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+
+
+        /* Main Content */
+        .content-container {
+            padding: 40px 5%;
+        }
+
+        /* Footer Styling */
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 40px 5%;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .footer h4 {
+            margin-bottom: 10px;
+            color: #FFC107;
+        }
+        .footer p, .footer a {
+            color: #ccc;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .footer a:hover {
+            color: #FFC107;
+        }
+        .footer-social a {
+            margin: 0 10px;
+            font-size: 20px;
+        }
+        .footer-bottom {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #bbb;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .navbar ul {
+                flex-direction: column;
+                margin-top: 10px;
+            }
+            .navbar ul li {
+                margin-bottom: 10px;
+            }
+            .footer {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+        
+        .contact-section {
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .contact-info, .contact-form {
+            flex: 1;
+            min-width: 300px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-info h3 {
+            margin-bottom: 15px;
+            color: #007BFF;
+        }
+        .info-item {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .info-item i {
+            color: #007BFF;
+            margin-right: 10px;
+        }
+        .info-item span {
+            font-size: 1rem;
+            color: #555;
+        }
+        .contact-form h3 {
+            margin-bottom: 15px;
+            color: #007BFF;
+        }
+        .contact-form form input, .contact-form form textarea, .contact-form form button {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact-form form button {
+            background: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .contact-form form button:hover {
+            background: #0056b3;
+        }
+        @media (max-width: 768px) {
+            .contact-container {
+                flex-direction: column;
+            }
+        }
+        /*privacy policy*/
+         .privacy-policy {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .privacy-policy h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #007BFF;
+            text-align: center;
+        }
+        .privacy-policy h2 {
+            font-size: 1.5rem;
+            margin-top: 20px;
+            color: #333;
+        }
+        .privacy-policy p {
+            margin: 10px 0;
+        }
+        .privacy-policy ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        .privacy-policy ul li {
+            margin-bottom: 10px;
+        }
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .back-link a {
+            text-decoration: none;
+            color: #007BFF;
+            font-size: 1rem;
+        }
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+        /*appoiment*/
+        .page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70%; /* Full viewport height */
+  margin:0 0 10px 0;
+  background-color:#caf0f8;
+}
+
+/* Centering the Appointment Form Container */
+.apcontainer {
+  background: white;
+  padding: 70px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Heading Animation */
+h1 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: slideIn 1s ease-in-out forwards;
+}
+
+/* Labels and Inputs */
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: left;
+  width: 100%;
+}
+
+select, input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Glowing Effect on Focus */
+input:focus, select:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 8px rgba(74, 144, 226, 0.6);
+}
+
+/* Dropdown Animation */
+select {
+  transform: scaleY(0);
+  transform-origin: top;
+  opacity: 0;
+  animation: dropdown 0.5s ease-in-out forwards;
+}
+
+/* Submit Button */
+button {
+  width: 100%;
+  background: linear-gradient(90deg, #4a90e2, #357ABD);
+  color: white;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/* Shaking Animation on Hover */
+button:hover {
+  animation: shake 0.5s ease-in-out;
+  background: linear-gradient(90deg, #357ABD, #4a90e2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes dropdown {
+  from {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  to {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+/* Doctor Section in Homepage */
+.doctor-page {
+    text-align: center;
+    padding: 60px 20px;
+    background: #0096c7;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Doctor Cards Container */
+.doctor-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Individual Doctor Card */
+.doctor-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Hover Effect */
+.doctor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Doctor Image */
+.doctor-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #4a90e2;
+}
+
+/* Doctor Name */
+.doctor-name {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Specialty */
+.specialty {
+    font-size: 16px;
+    color: #4a90e2;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Bio */
+.bio {
+    font-size: 14px;
+    color: #555;
+    padding: 10px;
+    line-height: 1.6;
+}
+
+/* Book Appointment Button */
+.book-btn {
+   background-color:#007BFF;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+/* Button Hover Animation */
+.book-btn:hover {
+    background-color:#007BFF;
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .doctor-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 28px;
+    }
+
+    .doctor-card {
+        padding: 15px;
+    }
+
+    .book-btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

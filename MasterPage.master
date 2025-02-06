@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Healthcare</title>
+    <asp:ContentPlaceHolder id="head" runat="server"></asp:ContentPlaceHolder>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header class="header">
+            <div class="logo-section">
+                <img src="logo/logo.png" alt="E-Healthcare Logo" class="logo" />
+                <h1 class="site-name">E-Healthcare</h1>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="homepage.aspx">Home</a></li>
+                    <li><a href="service.aspx">Services</a></li>
+                    <li><a href="aboutus.aspx">About Us</a></li>
+                    <li><a href="appoiment.aspx">Appointment</a></li>
+                     <li><a href="Contactus.aspx">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="login-container">
+                <a href="Login.aspx">Login</a>
+            </div>
+        </header>
+
+        <%--<div class="content-container">--%>
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+       <%-- </div>--%>
+
+        <footer class="footer">
+            <div class="footer-about">
+                <h4>About E-Healthcare</h4>
+                <p>Providing top-quality medical services with advanced technology and compassionate care.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                
+                    <a href="homepage.aspx">Home</a><br />
+                    <a href="service.aspx">Services</a><br />
+                    <a href="Contactus.aspx">Contact us</a><br />
+                    <a href="aboutus.aspx">About Us</a><br />
+                    <a href="privacypolicy.aspx">Privacy Policy</a>
+                
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                <p><i class="fas fa-envelope"></i> support@e-healthcare.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Health St, Wellness City</p>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </footer>
+        <p class="footer-bottom">&copy; 2025 E-Healthcare. All rights reserved.</p>
+    </form>
+</body>
+</html>
+
