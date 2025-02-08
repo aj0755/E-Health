@@ -23,7 +23,7 @@ public partial class Login : System.Web.UI.Page
             if (uname.StartsWith("AD_"))
             {
                 con.Open();
-                SqlCommand cmd = new SqlCommand("SELECT * FROM Admin WHERE Admin_ID = '" + txtEmail.Text + "' AND Admin_Password = '" + txtPassword.Text + "'");
+                SqlCommand cmd = new SqlCommand("SELECT * FROM Admin WHERE Admin_Id = '" + txtEmail.Text + "' AND Admin_pass = '" + txtPassword.Text + "'");
                 cmd.Connection = con;
                 cmd.ExecuteNonQuery();
                 SqlDataReader sdr = cmd.ExecuteReader();
@@ -33,7 +33,7 @@ public partial class Login : System.Web.UI.Page
                     Session["UserEmail"] = txtEmail.Text;
                     lblErrorMessage.Text = "Login successful!";
                     lblErrorMessage.ForeColor = System.Drawing.Color.Green;
-                    Response.Redirect("Admin/admindashboard.aspx?login=success");
+                    Response.Redirect("Admin/Dashboard.aspx?login=success");
                 }
                 else
                 {

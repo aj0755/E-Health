@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMasterPage.master.cs" Inherits="Admin_AdminMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="AdminStyleSheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="admin-container">
+            <!-- Sidebar -->
+            <nav class="sidebar">
+                <h2>E-Health Care</h2>
+                <ul>
+                    <li><a href="AdminDashboard.aspx">Dashboard</a></li>
+                    <li><a href="ManageDoctors.aspx">Doctors</a></li>
+                    <li><a href="ManagePatients.aspx">Patients</a></li>
+                    <li><a href="Appointments.aspx">Appointments</a></li>
+                </ul>
+            </nav>
+
+            <!-- Content Section -->
+            <div class="content">
+                <!-- Top Bar with Logout Button -->
+                <div class="topbar">
+                    <span>Welcome, Admin</span>
+                    <asp:Button ID="btnLogout" runat="server" Text="Logout" CssClass="logout-btn" OnClick="btnLogout_Click" />
+                </div>
+                 <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+                </asp:ContentPlaceHolder>
+           </div>       
+    </div>
+    </form>
+</body>
+</html>
